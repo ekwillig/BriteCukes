@@ -6,13 +6,13 @@ Feature: Calendar Module
   Background:
     Given user is on the login page
 
-
+  @loginManager
   Scenario: Login as manager
     When user logs in as manager
     Then breadcrumb is displayed
     And the user is logged in
 
-  @login
+  @loginUser
   Scenario: Login as user
     When user logs in as general user
     Then breadcrumb is displayed

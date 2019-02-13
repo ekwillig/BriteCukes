@@ -4,6 +4,7 @@ package com.cukeserp.utilities;
 import com.cukeserp.pages.*;
 
 public class Pages {
+
     private CalendarListViewPage calendarListViewPage;
     private CalendarPage         calendarPage;
     private HeaderPage           headerPage;
@@ -14,13 +15,11 @@ public class Pages {
     private LoginPage            loginPage;
     private SearchPage           searchPage;
 
-    public CalendarListViewPage getCalendarListViewPage ( ) {
-        return (calendarListViewPage == null) ? calendarListViewPage = new CalendarListViewPage ( ) : calendarListViewPage;
-    }
+// ------------------------------------------------------------------------Methods--------------------------------------------------------------------------------------------------
 
-    public CalendarPage getCalendar ( ) {
-        return (calendarPage == null) ? calendarPage = new CalendarPage ( ) : calendarPage;
-    }
+    public CalendarListViewPage getCalendarListViewPage ( ) { return (calendarListViewPage == null) ? calendarListViewPage = new CalendarListViewPage ( ) : calendarListViewPage; }
+
+    public CalendarPage getCalendar ( ) { return (calendarPage == null) ? calendarPage = new CalendarPage ( ) : calendarPage; }
 
     public HeaderPage getHeaderPage ( ) {
         return (headerPage == null) ? headerPage = new HeaderPage ( ) : headerPage;
@@ -38,9 +37,7 @@ public class Pages {
         return (inboxPage == null) ? inboxPage = new InboxPage ( ) : inboxPage;
     }
 
-    public LandingPage getLandingPage ( ) {
-        return (landingPage == null) ? landingPage = new LandingPage ( ) : landingPage;
-    }
+    public LandingPage getLandingPage ( ) { return (landingPage == null) ? landingPage = new LandingPage ( ) : landingPage; }
 
     public LoginPage getLoginPage ( ) {
         return (loginPage == null) ? loginPage = new LoginPage ( ) : loginPage;
