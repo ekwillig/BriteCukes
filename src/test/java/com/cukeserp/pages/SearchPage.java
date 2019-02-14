@@ -20,6 +20,8 @@ public class SearchPage {
     @FindBy ( xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]" )
     public WebElement CalanderModule;
 
+    @FindBy(css = "div.o_searchview>span")
+    public WebElement magnifierIcon;
 
     @FindBy ( xpath = "(//div[@class='btn-group o_dropdown'])[1]" )
     public WebElement FilterButton;
@@ -143,6 +145,9 @@ public class SearchPage {
 
     @FindBy ( xpath = "(//div[@class='o_cp_right']/div/div/button)[2]" )
     public WebElement GroupBy_button;
+
+    @FindBy(css = "div.btn-group.o_dropdown:last-of-type>button")
+    public WebElement Favorites_button;
 
     @FindBy ( xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[1]/a" )
     public WebElement groupResponsible_button;

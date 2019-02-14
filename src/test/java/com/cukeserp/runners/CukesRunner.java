@@ -23,34 +23,35 @@ import java.util.concurrent.TimeUnit;
         features = "src/test/resources/features",
         glue = "com.cukeserp.step_definitions"
         ,dryRun = false
-        ,tags = "@loginUser"
+        ,tags = "@runMe"
+        ,monochrome=true
 
 )
 public class CukesRunner {
-
-
-    @Before(order = 2)
-    public void setUp(){
-        System.out.println("I am setting up the test from the Hooks class!!!");
-        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        // you can also add maximize screen here
-        Driver.getDriver().manage().window().maximize();
-    }
-
-    @After
-    public void tearDown(Scenario scenario){
-        System.out.println("I am reporting the results");
-        // I want to take screenshot when current scenario fails.
-        // scenario.isFailed()  --> tells if the scenario failed or not
-        if (scenario.isFailed()) {
-            // this line is for taking screenshot
-            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            // this line is adding the screenshot to the report
-            scenario.embed(screenshot, "image/png");
-        }
-
-        System.out.println("Closing driver");
-        Driver.closeDriver();
-    }
 }
+
+//    @Before
+//    public void setUp(){
+//        System.out.println("I am setting up the test from the Hooks class!!!");
+//        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        // you can also add maximize screen here
+//        Driver.getDriver().manage().window().maximize();
+//    }
+//
+//    @After
+//    public void tearDown(Scenario scenario){
+//        System.out.println("I am reporting the results");
+//        // I want to take screenshot when current scenario fails.
+//        // scenario.isFailed()  --> tells if the scenario failed or not
+//        if (scenario.isFailed()) {
+//            // this line is for taking screenshot
+//            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//            // this line is adding the screenshot to the report
+//            scenario.embed(screenshot, "image/png");
+//        }
+//
+//        System.out.println("Closing driver");
+//      //  Driver.closeDriver();
+//    }
+
 

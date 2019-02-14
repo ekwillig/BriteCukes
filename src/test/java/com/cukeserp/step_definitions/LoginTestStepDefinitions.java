@@ -16,6 +16,7 @@ import static com.cukeserp.utilities.BrowserUtils.*;
 public class LoginTestStepDefinitions  {
     Pages pages = new Pages();
 
+
     @Given ("user is on the login page")
     public void user_is_on_the_login_page() {
         String url = ConfigurationReader.getProperties ( "url" );

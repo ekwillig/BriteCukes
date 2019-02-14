@@ -10,4 +10,7 @@ public interface BaseTest {
     ProgressMethods           progressObj   = new ProgressMethods();
     JavascriptHandlingMethods javascriptObj = new JavascriptHandlingMethods();
     ScreenShotMethods         screenshotObj = new ScreenShotMethods();
+
+
+
 }

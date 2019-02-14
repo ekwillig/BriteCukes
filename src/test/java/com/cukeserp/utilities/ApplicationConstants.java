@@ -50,6 +50,7 @@ public interface ApplicationConstants {
     String EXPECTED_FILE_UTILITY_SAID = CWD + "\\uploaded_files\\utility.xlsx";
     String IMPORTED_UTILITY_XLSX = "utility.xlsx";
     String INBOX_BREADCRUMB = "#Inbox";
+    String MINUS_ICON_CLASS = "o_searchview_more fa fa-search-minus";
 
 
 }
