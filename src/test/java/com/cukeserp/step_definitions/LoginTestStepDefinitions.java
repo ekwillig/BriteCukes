@@ -13,7 +13,7 @@ import static com.cukeserp.utilities.ApplicationConstants.*;
 import static com.cukeserp.utilities.BrowserUtils.*;
 
 
-public class LoginTestStepDefinitions  {
+public class LoginTestStepDefinitions {
     Pages pages = new Pages();
 
 
